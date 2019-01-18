@@ -12,6 +12,11 @@
 		15E575A921F1537B00F1EAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15E575A821F1537B00F1EAE6 /* Assets.xcassets */; };
 		15E575AC21F1537B00F1EAE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E575AA21F1537B00F1EAE6 /* LaunchScreen.storyboard */; };
 		15E575AF21F1537B00F1EAE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E575AE21F1537B00F1EAE6 /* main.m */; };
+		15E575B721F159CB00F1EAE6 /* PanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E575B621F159CB00F1EAE6 /* PanViewController.m */; };
+		15E575BA21F1609400F1EAE6 /* TapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E575B921F1609400F1EAE6 /* TapViewController.m */; };
+		15E575BD21F162C500F1EAE6 /* PinchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E575BC21F162C500F1EAE6 /* PinchViewController.m */; };
+		15E575C021F16FF800F1EAE6 /* SlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E575BF21F16FF800F1EAE6 /* SlideViewController.m */; };
+		15E575C321F17AAA00F1EAE6 /* RotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E575C221F17AAA00F1EAE6 /* RotationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,16 @@
 		15E575AB21F1537B00F1EAE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15E575AD21F1537B00F1EAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15E575AE21F1537B00F1EAE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15E575B521F159CB00F1EAE6 /* PanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanViewController.h; sourceTree = "<group>"; };
+		15E575B621F159CB00F1EAE6 /* PanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanViewController.m; sourceTree = "<group>"; };
+		15E575B821F1609400F1EAE6 /* TapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapViewController.h; sourceTree = "<group>"; };
+		15E575B921F1609400F1EAE6 /* TapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapViewController.m; sourceTree = "<group>"; };
+		15E575BB21F162C500F1EAE6 /* PinchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinchViewController.h; sourceTree = "<group>"; };
+		15E575BC21F162C500F1EAE6 /* PinchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinchViewController.m; sourceTree = "<group>"; };
+		15E575BE21F16FF800F1EAE6 /* SlideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideViewController.h; sourceTree = "<group>"; };
+		15E575BF21F16FF800F1EAE6 /* SlideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideViewController.m; sourceTree = "<group>"; };
+		15E575C121F17AAA00F1EAE6 /* RotationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotationViewController.h; sourceTree = "<group>"; };
+		15E575C221F17AAA00F1EAE6 /* RotationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,16 @@
 				15E5759F21F1537800F1EAE6 /* AppDelegate.h */,
 				15E575A021F1537800F1EAE6 /* AppDelegate.m */,
 				15E575A521F1537800F1EAE6 /* Main.storyboard */,
+				15E575BE21F16FF800F1EAE6 /* SlideViewController.h */,
+				15E575BF21F16FF800F1EAE6 /* SlideViewController.m */,
+				15E575C121F17AAA00F1EAE6 /* RotationViewController.h */,
+				15E575C221F17AAA00F1EAE6 /* RotationViewController.m */,
+				15E575BB21F162C500F1EAE6 /* PinchViewController.h */,
+				15E575BC21F162C500F1EAE6 /* PinchViewController.m */,
+				15E575B521F159CB00F1EAE6 /* PanViewController.h */,
+				15E575B621F159CB00F1EAE6 /* PanViewController.m */,
+				15E575B821F1609400F1EAE6 /* TapViewController.h */,
+				15E575B921F1609400F1EAE6 /* TapViewController.m */,
 				15E575A821F1537B00F1EAE6 /* Assets.xcassets */,
 				15E575AA21F1537B00F1EAE6 /* LaunchScreen.storyboard */,
 				15E575AD21F1537B00F1EAE6 /* Info.plist */,
@@ -136,7 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15E575B721F159CB00F1EAE6 /* PanViewController.m in Sources */,
 				15E575AF21F1537B00F1EAE6 /* main.m in Sources */,
+				15E575C021F16FF800F1EAE6 /* SlideViewController.m in Sources */,
+				15E575C321F17AAA00F1EAE6 /* RotationViewController.m in Sources */,
+				15E575BD21F162C500F1EAE6 /* PinchViewController.m in Sources */,
+				15E575BA21F1609400F1EAE6 /* TapViewController.m in Sources */,
 				15E575A121F1537800F1EAE6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
