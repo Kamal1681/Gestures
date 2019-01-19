@@ -27,12 +27,14 @@
     
     view.backgroundColor = [UIColor redColor];
     
-    UIRotationGestureRecognizer * tapGesture = [[UIRotationGestureRecognizer alloc]initWithTarget:self action:@selector(viewRotated:)];
-    [view addGestureRecognizer:tapGesture];
+    UIRotationGestureRecognizer * rotationGesture = [[UIRotationGestureRecognizer alloc]initWithTarget:self action:@selector(viewRotated:)];
+    
+    [view addGestureRecognizer:rotationGesture];
 }
 
 - (void) viewRotated: (UIRotationGestureRecognizer *) sender {
-    sender.view.transform = CGAffineTransformRotate(sender.view.transform, 0.1);
     
+    sender.view.transform = CGAffineTransformRotate(sender.view.transform, sender.rotation);
+    sender.rotation = 0;
 }
 @end

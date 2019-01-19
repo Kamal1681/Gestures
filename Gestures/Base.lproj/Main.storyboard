@@ -24,6 +24,7 @@
                         <segue destination="c5O-TR-i80" kind="relationship" relationship="viewControllers" id="Fkp-4k-UZn"/>
                         <segue destination="8Sg-P4-aTH" kind="relationship" relationship="viewControllers" id="sBD-oT-AD9"/>
                         <segue destination="A9p-El-2J3" kind="relationship" relationship="viewControllers" id="HT5-VS-NIV"/>
+                        <segue destination="eFB-YU-821" kind="relationship" relationship="viewControllers" id="TMk-PN-ieh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pc0-8t-CD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -60,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ad-MJ-PVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="348" y="849"/>
+            <point key="canvasLocation" x="347.82608695652175" y="848.4375"/>
         </scene>
         <!--Tap-->
         <scene sceneID="QXQ-wP-g5z">
@@ -126,6 +127,22 @@
             </objects>
             <point key="canvasLocation" x="348" y="-445"/>
         </scene>
+        <!--Edge-->
+        <scene sceneID="m82-GO-Hyn">
+            <objects>
+                <viewController id="eFB-YU-821" customClass="ScreenEdgeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h9p-oF-4Wn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99624377489089966" green="0.90785318613052368" blue="0.30496197938919067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="7dt-7b-G9s"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Edge" image="item6" id="hHU-f2-96z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H6w-OC-ln0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="348" y="2221"/>
+        </scene>
     </scenes>
     <resources>
         <image name="item1" width="30" height="30"/>
@@ -133,5 +150,6 @@
         <image name="item3" width="30" height="28"/>
         <image name="item4" width="30" height="30"/>
         <image name="item5" width="30" height="30"/>
+        <image name="item6" width="30" height="30"/>
     </resources>
 </document>

@@ -17,6 +17,7 @@
 		15E575BD21F162C500F1EAE6 /* PinchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E575BC21F162C500F1EAE6 /* PinchViewController.m */; };
 		15E575C021F16FF800F1EAE6 /* SlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E575BF21F16FF800F1EAE6 /* SlideViewController.m */; };
 		15E575C321F17AAA00F1EAE6 /* RotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E575C221F17AAA00F1EAE6 /* RotationViewController.m */; };
+		15E721AA21F3893100FDAA8F /* ScreenEdgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E721A921F3893100FDAA8F /* ScreenEdgeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		15E575BF21F16FF800F1EAE6 /* SlideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideViewController.m; sourceTree = "<group>"; };
 		15E575C121F17AAA00F1EAE6 /* RotationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotationViewController.h; sourceTree = "<group>"; };
 		15E575C221F17AAA00F1EAE6 /* RotationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotationViewController.m; sourceTree = "<group>"; };
+		15E721A821F3893100FDAA8F /* ScreenEdgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenEdgeViewController.h; sourceTree = "<group>"; };
+		15E721A921F3893100FDAA8F /* ScreenEdgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenEdgeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				15E5759F21F1537800F1EAE6 /* AppDelegate.h */,
 				15E575A021F1537800F1EAE6 /* AppDelegate.m */,
 				15E575A521F1537800F1EAE6 /* Main.storyboard */,
+				15E721A821F3893100FDAA8F /* ScreenEdgeViewController.h */,
+				15E721A921F3893100FDAA8F /* ScreenEdgeViewController.m */,
 				15E575BE21F16FF800F1EAE6 /* SlideViewController.h */,
 				15E575BF21F16FF800F1EAE6 /* SlideViewController.m */,
 				15E575C121F17AAA00F1EAE6 /* RotationViewController.h */,
@@ -162,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15E575B721F159CB00F1EAE6 /* PanViewController.m in Sources */,
+				15E721AA21F3893100FDAA8F /* ScreenEdgeViewController.m in Sources */,
 				15E575AF21F1537B00F1EAE6 /* main.m in Sources */,
 				15E575C021F16FF800F1EAE6 /* SlideViewController.m in Sources */,
 				15E575C321F17AAA00F1EAE6 /* RotationViewController.m in Sources */,

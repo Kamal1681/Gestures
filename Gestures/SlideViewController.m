@@ -8,7 +8,8 @@
 
 #import "SlideViewController.h"
 
-@interface SlideViewController () 
+@interface SlideViewController ()
+@property (nonatomic) BOOL openned;
 
 @end
 
@@ -16,38 +17,52 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    CGFloat width = self.view.center.x * 2;
+    CGFloat width = self.view.bounds.size.width;
     CGFloat height = 100;
     
-    CGRect frame = CGRectMake((self.view.bounds.origin.x), (CGRectGetMidY(self.view.bounds) - (height / 2)), width, height);
+    CGRect frame = CGRectMake((self.view.frame.origin.x), (CGRectGetMidY(self.view.frame) - (height / 2)), width, height);
     
     UIView * viewBottom = [[UIView alloc]initWithFrame:frame];
     [self.view addSubview:viewBottom];
     
     viewBottom.backgroundColor = [UIColor brownColor];
     
-    
-    
     UIView * viewTop = [[UIView alloc]initWithFrame:frame];
-    [self.view addSubview:viewTop];
-    viewTop.clipsToBounds = YES;
+    
+    [self.view insertSubview:viewTop aboveSubview:viewBottom];
+   
     viewTop.backgroundColor = [UIColor whiteColor];
     
-    UISwipeGestureRecognizer * swipeGesture = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(viewSwiped:)];
-    [viewTop addGestureRecognizer:swipeGesture];
+    UISwipeGestureRecognizer * swipeGestureRight = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(viewSwipedRight:)];
+    [viewTop addGestureRecognizer:swipeGestureRight];
+    swipeGestureRight.direction = UISwipeGestureRecognizerDirectionRight;
+    
+    UISwipeGestureRecognizer * swipeGestureLeft = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(viewSwipedLeft:)];
+    [viewTop addGestureRecognizer:swipeGestureLeft];
+    swipeGestureLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+
 }
 
-- (void) viewSwiped: (UISwipeGestureRecognizer *) sender {
+- (void) viewSwipedRight: (UISwipeGestureRecognizer *) sender {
+    if (self.openned) {
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        sender.view.frame = CGRectOffset(sender.view.frame, 150.0, 0.0);
+        
+    }];
+        self.openned = NO;
+    }
+}
+
+
+- (void) viewSwipedLeft: (UISwipeGestureRecognizer *) sender {
+    if (!self.openned) {
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        sender.view.frame = CGRectOffset(sender.view.frame, -150.0, 0.0);
     
-    switch (sender.direction) {
-        case UISwipeGestureRecognizerDirectionRight:
-            sender.view.transform = CGAffineTransformTranslate(sender.view.transform, -200, 0);
-            break;
-        case UISwipeGestureRecognizerDirectionLeft:
-            sender.view.transform = CGAffineTransformTranslate(sender.view.transform, 200, 0);
-            break;
-        default:
-            break;
+    }];
+        self.openned = YES;
     }
 }
 
